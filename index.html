@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henna By Nidhi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Henna By Nidhi</h1>
+
+            
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <p>Creating beautiful henna designs for every occasion.
+                Explore our services and book your appointment today!</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Artist</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#book">Book</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate henna (mehandi) artist who loves creating beautiful designs that reflect both traditional and personal style. My journey in this art form is driven by my love for creativity and attention to detail. In addition to mehandi, I offer elegant hairstyles to complete the perfect look for any occasion. I also enjoy crafting small DIY return gifts that add a personal and thoughtful touch to events. Whether it’s a festival, small events, or casual gathering, I strive to make every experience special with my art and creativity.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="HTML Images/IMG_6312 2.JPG" alt="Party Henna">
+                <h3>Party Henna</h3>
+                <p>$150/hr | 10-12 designs </p>
+            </div>
+            <div class="service">
+                <img src="HTML Images/IMG_6315 2.JPG" alt="Traditional Henna">
+                <h3>Traditional Henna</h3>
+                <p>$150/hr | 6 designs </p>
+            </div>
+            <div class="service">
+                <img src="HTML Images/IMG_6316 2.JPG" alt="Simple Henna">
+                <h3>Simple Henna</h3>
+                <p>$150/hr | Both hands & Both sides</p>
+            </div>
+            <div class="service">
+                <img src="HTML Images/IMG_6314 2.JPG" alt="Bridal Henna">
+                <h3>Bridal Henna</h3>
+                <p>$500 | Full bridal package |Hands both sides up to elbow</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-slider">
+                <div class="gallery-slide">
+                    <img src="HTML Images/IMG_6312 2.JPG" alt="Gallery Image 1">
+                    <img src="HTML Images/IMG_6313 2.JPG" alt="Gallery Image 2">
+                    <img src="HTML Images/IMG_6314 2.JPG" alt="Gallery Image 3">
+                    <img src="HTML Images/IMG_6315 2.JPG" alt="Gallery Image 4">
+                    <img src="HTML Images/IMG_6339.JPG" alt="Gallery Image 5">
+                </div>
+                <div class="gallery-slide">
+                    <img src="HTML Images/IMG_6341.JPG" alt="Gallery Image 6">
+                    <img src="HTML Images/IMG_6312 2.JPG" alt="Gallery Image 7">
+                    <img src="HTML Images/IMG_6341.JPG" alt="Gallery Image 8">
+                    <img src="HTML Images/IMG_6313 2.JPG" alt="Gallery Image 9">
+                    <img src="HTML Images/IMG_6314 2.JPG" alt="Gallery Image 10">
+                </div>
+                <div class="gallery-slide">
+                    <img src="HTML Images/IMG_6341.JPG" alt="Gallery Image 11">
+                    <img src="HTML Images/IMG_6340.JPG" alt="Gallery Image 12">
+                    <img src="HTML Images/IMG_6312 2.JPG" alt="Gallery Image 13">
+                    <img src="HTML Images/IMG_6315 2.JPG" alt="Gallery Image 14">
+                    <img src="HTML Images/IMG_6313 2.JPG" alt="Gallery Image 15">
+                </div>
+            </div>
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Book Now Section -->
+    <section id="book">
+        <h2>Book Now</h2>
+        <form id="bookingForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <input type="date" id="date" name="date" required>
+            <input type="text" id="location" name="location" placeholder="Event Location" required>
+            <select id="service" name="service" required>
+                <option value="Party Henna">Party Henna</option>
+                <option value="Traditional Henna">Traditional Henna</option>
+                <option value="Simple Henna">Simple Henna</option>
+                <option value="Bridal Henna">Bridal Henna</option>
+            </select>
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Henna By Nidhi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

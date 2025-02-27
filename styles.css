@@ -1,0 +1,250 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFF2F1;
+    color: #223D3C;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #223D3C;
+    color: #EFF2F1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #223D3C;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EFF2F1;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* About Me Section */
+#about {
+    position: relative;
+}
+
+#services::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #223D3C; /* Line color */
+    position: absolute;
+    top: -10px; /* Position the line above the section */
+    left: 0;
+}
+
+#about {
+    background-color: #EFF2F1;
+    color: #223D3C;
+    padding-top: 20px; /* Move the About section upwards */
+    margin-top: -20px; /* Adjust margin to move it up */
+}
+
+#about p {
+    max-width: 10000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Line above Services Section */
+#services {
+    position: relative;
+}
+
+#services::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #223D3C; /* Line color */
+    position: absolute;
+    top: -10px; /* Position the line above the section */
+    left: 0;
+}
+
+/* Line below Services Section */
+#services::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #223D3C; /* Line color */
+    position: absolute;
+    bottom: -10px; /* Position the line below the section */
+    left: 0;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #223D3C;
+    color: #EFF2F1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #223D3C;
+    padding: 20px 20px;
+}
+#gallery h2 {
+    color: #EFF2F1; /* Updated gallery heading color */
+}
+
+.gallery-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gallery-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-slide {
+    display: flex;
+    flex: 0 0 100%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-slide img {
+    width: 18%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #223D3C;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.slider-btn.prev {
+    left: 10px;
+}
+
+.slider-btn.next {
+    right: 10px;
+}
+
+/* Book Now Section */
+#book {
+    background-color: #EFF2F1; /* Updated background color */
+    color: #223D3C;
+    padding: 20px 20px;
+}
+
+#book h2 {
+    color: #223D3C;
+    margin-bottom: 15px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #EFF2F1;
+    border-radius: 5px;
+    background-color: #223D3C;
+    color: #EFF2F1;
+    font-size: 14px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #EFF2F1;
+    opacity: 0.7;
+}
+
+form button {
+    background-color: #223D3C; /* Green button */
+    color: #EFF2F1;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+form button:hover {
+    background-color: #223D3C; /* Darker green on hover */
+}
+
+/* Footer Section */
+footer {
+    background-color: #223D3C;
+    color: #EFF2F1;
+    text-align: center;
+    padding: 10px 0;
+}
